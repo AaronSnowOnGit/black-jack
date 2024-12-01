@@ -10,10 +10,11 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  /*max-width: 600px;*/
   margin: 0 auto;
-  border-bottom: 1px solid  red ;
+  border-bottom: 2px solid  red ;
   background-color: #2f2f2f;
+  justify-content: end;
+  flex-wrap: nowrap;
 }
 
 .navbar h1 {
@@ -43,6 +44,8 @@
   color: white;
   background-color: red;
   border-radius: 3px;
+  border-color: white;
+  border-width: 1px;
 }
 
 #play:hover {
@@ -50,11 +53,71 @@
 }
 
 .content {
-  max-width: 600px;
+  width: 70%;
   margin: 40px auto;
   padding: 20px;
 }
 
 .App {
   background-color: #04b91a;
+}
+
+.cards {
+  font-size: 150px;
+}
+
+.game {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+#playArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#userArea {
+  border-left: 4px solid #2f2f2f;
+  padding-left: 3em;
+  margin-bottom: 3em;
+}
+
+#dealerArea {
+  border-left: 4px solid #2f2f2f;
+  padding-left: 3em;
+  margin-bottom: 3em;
+}
+
+button {
+  max-width: 7em;
+  min-width: 5em;
+  padding: 0.5em;
+  background-color: red;
+  border: 2px solid #2f2f2f;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#deal {
+  align-self: center;
+}
+
+.userControls {
+  display: flex;
+  justify-content: left;
+  visibility: hidden;
+}
+
+#hit {
+  visibility: hidden;
+}
+
+#stay {
+  visibility: hidden;
 }
