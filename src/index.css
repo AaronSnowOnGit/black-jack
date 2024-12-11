@@ -6,6 +6,10 @@
   color:  #2f2f2f ;
 }
 
+html {
+  background-color: #04b91a;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -50,16 +54,13 @@
 
 #play:hover {
   color: #2f2f2f;
+  background-color: white;
 }
 
 .content {
   width: 70%;
   margin: 40px auto;
   padding: 20px;
-}
-
-.App {
-  background-color: #04b91a;
 }
 
 .cards {
@@ -106,6 +107,19 @@ button {
 
 #deal {
   align-self: center;
+}
+
+#gameInfo {
+  align-self: center;
+  font-size: 50px;
+}
+
+.gameEnd {
+  color: red;
+  background-color: white;
+  border: 2px solid #2f2f2f;
+  border-radius: 10px;
+  padding: 0.2em 0.5em;
 }
 
 .userControls {
